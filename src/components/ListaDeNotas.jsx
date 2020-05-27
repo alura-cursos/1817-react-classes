@@ -2,17 +2,13 @@ import React, { Component } from "react";
 import CardNota from "./CardNota";
 
 class ListaDeNotas extends Component {
-  constructor() {
-    super();
-    this.quantidadeDeNotas = [1, 2, 32, 4, 5];
-  }
   render() {
     return (
       <ul>
-        {this.quantidadeDeNotas.map((numero) => {
+        {Array.of("Trabalho", "Trabalho", "Estudos").map((categoria) => {
           return (
             <li>
-              <div>{numero}</div>
+              
               <CardNota />
             </li>
           );
